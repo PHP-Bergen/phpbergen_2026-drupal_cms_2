@@ -1,0 +1,32 @@
+{
+  "name": "phpbergen/topic",
+  "description": "PHP talk and demonstration",
+  "homepage": "https://github.com/PHP-Bergen",
+  "authors": [
+    {
+      "name": "Stein Magne Bjørklund",
+      "email": "steinmb@smbjorklund.com"
+    }
+  ],
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.5"
+  },
+  "config": {
+    "platform": {
+      "php": "8.5"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "phpbergen\\TalkTopic\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phpbergen\\Tests\\": "tests"
+    }
+  }
+}

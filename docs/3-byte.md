@@ -19,6 +19,7 @@ php core/scripts/drupal generate-theme my_custom_theme --name "My Custom Theme" 
 
 -----
 
+* [Links](4-page.md)
 * [Back to first](index.md)
 
 ## [> Home](../README.md)

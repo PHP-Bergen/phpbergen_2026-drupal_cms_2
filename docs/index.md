@@ -7,6 +7,14 @@ We'll be focusing on these three main features:
 2. AI Integration — In Canvas and Across Drupal
 3. The Byte Site Template / Mercury theme
 
+## Origins
+
+* A bit about the history of drupal CMS, formerly known as starshot
+* Whats new in Drupal CMS 2: Canvas, Live preview, Automtic updates, launcher app
+* Mercury and Byte theme.
+  * SDC
+* AI-functions in drupal: Admin chatbot, AI generator.
+
 
 
 

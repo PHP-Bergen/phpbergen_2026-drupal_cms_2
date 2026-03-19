@@ -1,0 +1,89 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json"
+name: Table (Designsystemet)
+group: Content
+status: stable
+props:
+  type: object
+  properties:
+    caption:
+      type: string
+      title: Caption
+      examples:
+        - "Table caption"
+    color:
+      type: string
+      title: Color
+      enum:
+        - neutral
+        - accent
+        - brand1
+        - brand2
+        - brand3
+      meta:enum:
+        neutral: Neutral
+        accent: Accent
+        brand1: Brand 1
+        brand2: Brand 2
+        brand3: Brand 3
+      default: neutral
+      examples:
+        - neutral
+    size:
+      type: string
+      title: Size
+      enum:
+        - sm
+        - md
+        - lg
+      meta:enum:
+        sm: Small
+        md: Medium
+        lg: Large
+      default: md
+      examples:
+        - md
+    border:
+      type: boolean
+      title: Border
+      description: Adds a rounded border around the table.
+      default: false
+      examples:
+        - false
+    zebra:
+      type: boolean
+      title: Zebra striping
+      description: Alternating background color on every other row.
+      default: false
+      examples:
+        - false
+    hover:
+      type: boolean
+      title: Hover effect
+      description: Highlights a row when the user hovers over it.
+      default: false
+      examples:
+        - false
+    sticky_header:
+      type: boolean
+      title: Sticky header
+      description: Keeps the table header visible while scrolling.
+      default: false
+      examples:
+        - false
+
+slots:
+  table_head:
+    title: Table head
+    description: One or more <tr> rows with <th> cells for the table header.
+    examples:
+      - "<tr><th>Name</th><th>Role</th><th>Status</th></tr>"
+  table_body:
+    title: Table body
+    description: One or more <tr> rows with <td> cells for the table content.
+    examples:
+      - "<tr><td>Alice</td><td>Designer</td><td>Active</td></tr><tr><td>Bob</td><td>Developer</td><td>Active</td></tr><tr><td>Carol</td><td>Manager</td><td>On leave</td></tr>"
+  table_foot:
+    title: Table foot
+    description: Optional table footer. Must include the full <tfoot> element with <tr> rows inside.
+    examples:
+      - "<tfoot><tr><th>Total</th><td>3</td><td></td></tr></tfoot>"

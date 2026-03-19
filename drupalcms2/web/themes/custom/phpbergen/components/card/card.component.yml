@@ -5,46 +5,51 @@ props:
   type: object
   required:
     - heading_text
-    - orientation
-    - style
   properties:
-    background:
+    color:
       type: string
-      title: Background
+      title: Color
+      enum:
+        - neutral
+        - accent
+        - brand1
+        - brand2
+        - brand3
+      meta:enum:
+        neutral: Neutral
+        accent: Accent
+        brand1: Brand 1
+        brand2: Brand 2
+        brand3: Brand 3
+      default: neutral
+      examples:
+        - neutral
+    variant:
+      type: string
+      title: Variant
       enum:
         - default
-        - accent
-        - primary
-        - inverted
+        - tinted
       meta:enum:
         default: Default
-        accent: Accent
-        primary: Primary
-        inverted: Inverted
+        tinted: Tinted
+      default: default
       examples:
         - default
-    style:
+    size:
       type: string
-      title: Style
+      title: Size
       enum:
-        - framed
-        - full
+        - sm
+        - md
+        - lg
       meta:enum:
-        framed: Framed
-        full: Full width
+        sm: Small
+        md: Medium
+        lg: Large
+      default: md
       examples:
-        - framed
-    orientation:
-      type: string
-      title: Orientation
-      enum:
-        - vertical
-        - horizontal
-      meta:enum:
-        vertical: Vertical
-        horizontal: Horizontal
-      examples:
-        - vertical
+        - md
     heading_text:
       type: string
       title: Heading
@@ -57,6 +62,7 @@ props:
         - 2
         - 3
         - 4
+        - 5
       default: 3
       examples:
         - 3
@@ -79,8 +85,3 @@ props:
       pattern: "(.|\\r?\\n)*"
       examples:
         - "Quaerat laborum rerum dolores dolores dolor qui."
-    is_text_centered:
-      type: boolean
-      title: Center text
-      examples:
-        - false

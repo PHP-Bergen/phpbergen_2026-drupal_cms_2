@@ -20,3 +20,11 @@ messages:
   dependencies:
     - core/drupal
     - core/once
+
+text-tables:
+  version: VERSION
+  js:
+    lib/text-tables.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

@@ -17,5 +17,9 @@
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@digdir/designsystemet-css": "^1.13.0",
+    "@digdir/designsystemet-theme": "^1.11.0"
   }
 }

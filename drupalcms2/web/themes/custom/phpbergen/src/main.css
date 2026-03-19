@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@import "../node_modules/@digdir/designsystemet-theme/src/themes/designsystemet.css";
+@import "../node_modules/@digdir/designsystemet-css/dist/src/card.css";
+@import "../node_modules/@digdir/designsystemet-css/dist/src/button.css";
+@import "../node_modules/@digdir/designsystemet-css/dist/src/table.css";
+
 @import "../components/hero-blog/hero-blog.tailwind.css";
 @import "../components/navbar/navbar.tailwind.css";
 @import "../components/anchor/anchor.tailwind.css";

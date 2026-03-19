@@ -1,0 +1,27 @@
+{% set btn_variant = variant|default('primary') %}
+{% set btn_size = size|default('md') %}
+{% set btn_color = color|default('accent') %}
+{% set is_disabled = disabled|default(false) %}
+
+{% set disabled_attr = is_disabled ? 'aria-disabled="true"' : '' %}
+{% set button_disabled_attr = is_disabled ? 'disabled' : '' %}
+{% set href_attr = (is_disabled or href is empty) ? null : href %}
+
+{% if href_attr %}
+  <a
+    href="{{ href_attr }}"
+    class="ds-button"
+    data-variant="{{ btn_variant }}"
+    data-size="{{ btn_size }}"
+    data-color="{{ btn_color }}"
+    {{ disabled_attr }}
+  >{{ label }}</a>
+{% else %}
+  <button
+    class="ds-button"
+    data-variant="{{ btn_variant }}"
+    data-size="{{ btn_size }}"
+    data-color="{{ btn_color }}"
+    {{ button_disabled_attr }}
+  >{{ label }}</button>
+{% endif %}

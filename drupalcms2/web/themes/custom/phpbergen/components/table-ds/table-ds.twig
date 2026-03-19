@@ -1,0 +1,25 @@
+{% set attrs %}
+  class="ds-table"
+  {% if color is not empty %}data-color="{{ color }}"{% endif %}
+  {% if size is not empty %}data-size="{{ size }}"{% endif %}
+  {% if border %}data-border{% endif %}
+  {% if zebra %}data-zebra{% endif %}
+  {% if hover %}data-hover{% endif %}
+  {% if sticky_header %}data-sticky-header{% endif %}
+{% endset %}
+
+<table {{ attrs }}>
+  {% if caption is not empty %}
+    <caption>{{ caption }}</caption>
+  {% endif %}
+
+  <thead>
+    {% block table_head %}{% endblock %}
+  </thead>
+
+  <tbody>
+    {% block table_body %}{% endblock %}
+  </tbody>
+
+  {% block table_foot %}{% endblock %}
+</table>

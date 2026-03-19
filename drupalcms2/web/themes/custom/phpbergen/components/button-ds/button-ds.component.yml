@@ -1,0 +1,71 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json"
+name: Button (Designsystemet)
+group: Base
+status: stable
+props:
+  type: object
+  required:
+    - label
+    - variant
+  properties:
+    label:
+      type: string
+      title: Label
+      examples:
+        - "Button label"
+    variant:
+      type: string
+      title: Variant
+      enum:
+        - primary
+        - secondary
+        - tertiary
+      meta:enum:
+        primary: Primary
+        secondary: Secondary
+        tertiary: Tertiary
+      default: primary
+      examples:
+        - primary
+    size:
+      type: string
+      title: Size
+      enum:
+        - sm
+        - md
+        - lg
+      meta:enum:
+        sm: Small
+        md: Medium
+        lg: Large
+      default: md
+      examples:
+        - md
+    color:
+      type: string
+      title: Color
+      enum:
+        - accent
+        - brand1
+        - brand2
+        - brand3
+        - neutral
+      meta:enum:
+        accent: Accent
+        brand1: Brand 1
+        brand2: Brand 2
+        brand3: Brand 3
+        neutral: Neutral
+      default: accent
+      examples:
+        - accent
+    href:
+      type: string
+      title: Link
+      format: uri-reference
+    disabled:
+      type: boolean
+      title: Disabled
+      default: false
+      examples:
+        - false

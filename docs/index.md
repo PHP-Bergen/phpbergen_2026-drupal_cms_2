@@ -1,3 +1,5 @@
+![PHP Bergen - Presentation](https://github.com/PHP-Bergen/presentation_template/actions/workflows/php.yml/badge.svg)
+
 # Live walkthrough of Drupal CMS 2
 
 A live walkthrough of Drupal CMS 2.0, one of the most significant milestones in Drupal's 25-year history. This release fundamentally changes how Drupal sites are built, making enterprise-grade web publishing accessible to non-technical users.

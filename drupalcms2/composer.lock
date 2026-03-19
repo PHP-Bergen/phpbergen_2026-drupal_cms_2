@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd351354537a85fbd910e5f7a67e5544",
+    "content-hash": "db13a0d9cd3cd0f379a91d9f876791c2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1573,17 +1573,17 @@
         },
         {
             "name": "drupal/ai",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ai.git",
-                "reference": "1.3.0"
+                "reference": "1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ai-1.3.0.zip",
-                "reference": "1.3.0",
-                "shasum": "0585d2d799305c3275b0966f8b41959fd7fa45ab"
+                "url": "https://ftp.drupal.org/files/projects/ai-1.3.1.zip",
+                "reference": "1.3.1",
+                "shasum": "a091d050e5d839678d2ffdeab7df7e53634ea051"
             },
             "require": {
                 "drupal/core": "^10.5 || ^11.2",
@@ -1613,8 +1613,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.3.0",
-                    "datestamp": "1773325312",
+                    "version": "1.3.1",
+                    "datestamp": "1773841083",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1755,6 +1755,10 @@
                 {
                     "name": "andrewbelcher",
                     "homepage": "https://www.drupal.org/user/655282"
+                },
+                {
+                    "name": "harivansh",
+                    "homepage": "https://www.drupal.org/user/3678656"
                 },
                 {
                     "name": "jurgenhaas",
@@ -4266,6 +4270,60 @@
             }
         },
         {
+            "name": "drupal/gemini_provider",
+            "version": "1.0.1-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gemini_provider.git",
+                "reference": "1.0.1-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gemini_provider-1.0.1-rc1.zip",
+                "reference": "1.0.1-rc1",
+                "shasum": "ad28599a4e3227ba1e46bd71eca307a9e05882d1"
+            },
+            "require": {
+                "drupal/ai": "^1.1",
+                "drupal/core": "^10 || ^11",
+                "drupal/key": "*",
+                "google-gemini-php/client": "^2.7"
+            },
+            "require-dev": {
+                "drush/drush": "^12 || ^13"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1-rc1",
+                    "datestamp": "1772652785",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jibla",
+                    "homepage": "https://www.drupal.org/user/1013184"
+                },
+                {
+                    "name": "lekso surameli",
+                    "homepage": "https://www.drupal.org/user/3709459"
+                }
+            ],
+            "description": "Gemini provider for AI module.",
+            "homepage": "https://www.drupal.org/project/gemini_provider",
+            "support": {
+                "source": "https://git.drupalcode.org/project/gemini_provider"
+            }
+        },
+        {
             "name": "drupal/gin",
             "version": "5.0.12",
             "source": {
@@ -6352,16 +6410,16 @@
         },
         {
             "name": "drupal/site_template_helper",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/site_template_helper.git",
-                "reference": "57c2e405670bfc80217ec99b87878c527e4b568d"
+                "reference": "42ea542fe084a4c96bb88620b1138309622514b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fsite_template_helper/repository/archive.zip?sha=57c2e405670bfc80217ec99b87878c527e4b568d",
-                "reference": "57c2e405670bfc80217ec99b87878c527e4b568d",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Fsite_template_helper/repository/archive.zip?sha=42ea542fe084a4c96bb88620b1138309622514b5",
+                "reference": "42ea542fe084a4c96bb88620b1138309622514b5",
                 "shasum": ""
             },
             "require": {
@@ -6384,9 +6442,9 @@
             ],
             "description": "Provides tooling and scaffolding for setting up Drupal site templates.",
             "support": {
-                "source": "https://git.drupalcode.org/project/site_template_helper/-/tree/1.0.1"
+                "source": "https://git.drupalcode.org/project/site_template_helper/-/tree/1.0.2"
             },
-            "time": "2026-02-14T08:48:40+00:00"
+            "time": "2026-03-15T12:28:24+00:00"
         },
         {
             "name": "drupal/svg_image",
@@ -7383,6 +7441,86 @@
             "time": "2018-01-19T23:11:36+00:00"
         },
         {
+            "name": "google-gemini-php/client",
+            "version": "2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/google-gemini-php/client.git",
+                "reference": "d61ebe8e8f7acc2aa66ce2e8a57c23bf32e1e340"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/google-gemini-php/client/zipball/d61ebe8e8f7acc2aa66ce2e8a57c23bf32e1e340",
+                "reference": "d61ebe8e8f7acc2aa66ce2e8a57c23bf32e1e340",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1.0",
+                "php-http/discovery": "^1.19.2",
+                "psr/http-client-implementation": "*",
+                "psr/http-factory-implementation": "*"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^7.8.1",
+                "guzzlehttp/psr7": "^2.6.2",
+                "laravel/pint": "^1.18.1",
+                "mockery/mockery": "^1.6.7",
+                "pestphp/pest": "^2.32.3",
+                "phpstan/phpstan": "^2.1.32"
+            },
+            "suggest": {
+                "ext-fileinfo": "Reads upload file size and mime type if not provided"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Gemini.php"
+                ],
+                "psr-4": {
+                    "Gemini\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fatih AYDIN",
+                    "email": "aydinfatih52@gmail.com"
+                }
+            ],
+            "description": "Gemini API is a supercharged PHP API client that allows you to interact with the Gemini API",
+            "keywords": [
+                "Gemini",
+                "banana",
+                "client",
+                "gemini-pro",
+                "google",
+                "language",
+                "natural",
+                "nlp",
+                "php",
+                "processing",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/google-gemini-php/client/issues",
+                "source": "https://github.com/google-gemini-php/client/tree/2.7.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Plytas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/aydinfatih",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-12-29T17:51:16+00:00"
+        },
+        {
             "name": "grasmash/expander",
             "version": "3.0.1",
             "source": {
@@ -7930,16 +8068,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.14",
+            "version": "v0.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "9f0e371244eedfe2ebeaa72c79c54bb5df6e0176"
+                "reference": "4bb8107ec97651fd3f17f897d6489dbc4d8fb999"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/9f0e371244eedfe2ebeaa72c79c54bb5df6e0176",
-                "reference": "9f0e371244eedfe2ebeaa72c79c54bb5df6e0176",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/4bb8107ec97651fd3f17f897d6489dbc4d8fb999",
+                "reference": "4bb8107ec97651fd3f17f897d6489dbc4d8fb999",
                 "shasum": ""
             },
             "require": {
@@ -7983,9 +8121,9 @@
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.3.14"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.15"
             },
-            "time": "2026-03-01T09:02:38+00:00"
+            "time": "2026-03-17T13:45:17+00:00"
         },
         {
             "name": "league/commonmark",
@@ -8489,16 +8627,16 @@
         },
         {
             "name": "mck89/peast",
-            "version": "v1.17.4",
+            "version": "v1.17.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mck89/peast.git",
-                "reference": "c6a63f32410d2e4ee2cd20fe94b35af147fb852d"
+                "reference": "e19a8bd896b7f04941a38fd38a140c9a6531c84f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mck89/peast/zipball/c6a63f32410d2e4ee2cd20fe94b35af147fb852d",
-                "reference": "c6a63f32410d2e4ee2cd20fe94b35af147fb852d",
+                "url": "https://api.github.com/repos/mck89/peast/zipball/e19a8bd896b7f04941a38fd38a140c9a6531c84f",
+                "reference": "e19a8bd896b7f04941a38fd38a140c9a6531c84f",
                 "shasum": ""
             },
             "require": {
@@ -8511,7 +8649,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17.4-dev"
+                    "dev-master": "1.17.5-dev"
                 }
             },
             "autoload": {
@@ -8532,9 +8670,9 @@
             "description": "Peast is PHP library that generates AST for JavaScript code",
             "support": {
                 "issues": "https://github.com/mck89/peast/issues",
-                "source": "https://github.com/mck89/peast/tree/v1.17.4"
+                "source": "https://github.com/mck89/peast/tree/v1.17.5"
             },
-            "time": "2025-10-10T12:53:17+00:00"
+            "time": "2026-03-15T10:47:07+00:00"
         },
         {
             "name": "mtownsend/xml-to-array",
@@ -8807,16 +8945,16 @@
         },
         {
             "name": "openai-php/client",
-            "version": "v0.19.0",
+            "version": "v0.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openai-php/client.git",
-                "reference": "c52f871fba345c6cbd8a3945c4d167e2e21266fd"
+                "reference": "f2b1ce48b1c011ebc2abb255db5abf82ef4a6a44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openai-php/client/zipball/c52f871fba345c6cbd8a3945c4d167e2e21266fd",
-                "reference": "c52f871fba345c6cbd8a3945c4d167e2e21266fd",
+                "url": "https://api.github.com/repos/openai-php/client/zipball/f2b1ce48b1c011ebc2abb255db5abf82ef4a6a44",
+                "reference": "f2b1ce48b1c011ebc2abb255db5abf82ef4a6a44",
                 "shasum": ""
             },
             "require": {
@@ -8878,7 +9016,7 @@
             ],
             "support": {
                 "issues": "https://github.com/openai-php/client/issues",
-                "source": "https://github.com/openai-php/client/tree/v0.19.0"
+                "source": "https://github.com/openai-php/client/tree/v0.19.1"
             },
             "funding": [
                 {
@@ -8894,7 +9032,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-10T11:15:52+00:00"
+            "time": "2026-03-17T20:53:51+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -13380,16 +13518,16 @@
         },
         {
             "name": "twig/html-extra",
-            "version": "v3.23.0",
+            "version": "v3.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/html-extra.git",
-                "reference": "2ef1d0ccaa06d4f4405b330fe6c4b6f7b50fbbc3"
+                "reference": "313900fb98b371b006a55b1a29241a192634be13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/2ef1d0ccaa06d4f4405b330fe6c4b6f7b50fbbc3",
-                "reference": "2ef1d0ccaa06d4f4405b330fe6c4b6f7b50fbbc3",
+                "url": "https://api.github.com/repos/twigphp/html-extra/zipball/313900fb98b371b006a55b1a29241a192634be13",
+                "reference": "313900fb98b371b006a55b1a29241a192634be13",
                 "shasum": ""
             },
             "require": {
@@ -13432,7 +13570,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/html-extra/tree/v3.23.0"
+                "source": "https://github.com/twigphp/html-extra/tree/v3.24.0"
             },
             "funding": [
                 {
@@ -13444,7 +13582,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-02T14:45:16+00:00"
+            "time": "2026-03-17T07:24:08+00:00"
         },
         {
             "name": "twig/twig",
@@ -13581,6 +13719,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "drupal/gemini_provider": 5,
         "drupal/project_browser": 10,
         "drupal/webform": 10
     },

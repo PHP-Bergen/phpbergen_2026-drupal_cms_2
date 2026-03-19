@@ -1,0 +1,15 @@
+name: PHPbergen
+type: theme
+'base theme': false
+libraries:
+  - phpbergen/global
+logo: logo-dark.svg
+description: 'A custom theme based on Mercury.'
+core_version_requirement: ^11
+generator: 'mercury:1.0.2'
+regions:
+  content: Content
+  header: Header
+  footer: Footer
+dependencies:
+  - 'cva:cva'

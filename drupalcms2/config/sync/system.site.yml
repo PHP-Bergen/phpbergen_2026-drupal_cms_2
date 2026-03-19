@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
+langcode: en
+uuid: 252dfed5-e640-49e0-bad3-6f7b61582102
+name: 'PHP Bergen'
+mail: test@test.com
+slogan: ''
+page:
+  403: /user/login
+  404: /404
+  front: /page/7
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

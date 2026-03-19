@@ -15,3 +15,6 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+# keys
+config/sync/key.key.*
